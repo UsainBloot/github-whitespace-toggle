@@ -7,3 +7,7 @@ Inject the javascript found in `insert.js` onto every **GitHub** page.
 ## Working pages
 * Pull Request File Diff
 * Pull Request Commit File Diff
+
+## Current Issues
+* May require page refresh to be injected (as GitHub does not do full page reloads on tab clicks)
+* Ignoring whitespace on diffs also hides any review comments made on lines in files
