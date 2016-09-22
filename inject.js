@@ -2,7 +2,10 @@
   var pattern = /\/pull\/[0-9]+\/(files|commits\/[a-f0-9]+)|\/commit\/[a-f0-9]+/;
   var markup_HTML = '<div class="diffbar-item"><button id="ignoreWhitespace" class="btn btn-sm btn-outline tooltipped tooltipped-s" type="button" aria-label="View diff with whitespace ignored">Ignore whitespace</button></div>';
 
-  if(window.location.hostname === "github.com" && pattern.test(window.location.pathname)) {
+
+  if(window.location.hostname === "github.com"
+   && pattern.test(window.location.pathname)
+   && document.getElementById('ignoreWhitespace') === null) {
     var container_DOM = document.querySelector('.float-right.pr-review-tools');
 
     var InsertInDom = new Promise(

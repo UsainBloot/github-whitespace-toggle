@@ -19,6 +19,6 @@ javascript:(function () {
     }
 
     window.location.search = params.join('&');
-    
+
   }
  })()

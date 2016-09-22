@@ -1,6 +1,7 @@
-# GitHub File Diff Ignore Whitespace Toggle
+# GitHub Ignore Whitespace Button
+## For file diffs
 
-Inject the javascript found in `insert.js` onto every **GitHub** page.
+Inserts an "Ignore Whitespace" button on file diff pages on GitHub.
 
 ![Screenshot](http://i.imgur.com/jBIcKsF.png)
 
@@ -9,9 +10,4 @@ Inject the javascript found in `insert.js` onto every **GitHub** page.
 * Pull Request Commit File Diff
 
 ## Current Issues
-* May require page refresh to be injected (as GitHub does not do full page reloads on tab clicks)
 * Ignoring whitespace on diffs also hides any review comments made on lines in files
-
-## ToDo
-* Still inject on non full page reloads
-* Make into Chrome extension
