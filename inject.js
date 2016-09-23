@@ -6,11 +6,17 @@
         pattern.test(window.location.pathname) &&
         document.getElementById('ignoreWhitespace') === null) {
 
-        var container_DOM = document.querySelector('.float-right.pr-review-tools');
+        var container_DOM = document.querySelector('.float-right.pr-review-tools') || document.querySelector('#toc .BtnGroup.float-right');
+        var isCommitDiffPage = container_DOM.parentElement.id === 'toc';
 
         var InsertInDom = new Promise(
             function(resolve, reject) {
-                container_DOM.insertAdjacentHTML('afterBegin', markup_HTML);
+                if(isCommitDiffPage) {
+                  container_DOM.insertAdjacentHTML('afterEnd', '<div class="BtnGroup float-right">' + markup_HTML + '</div>');
+                } else {
+                  container_DOM.insertAdjacentHTML('afterBegin', markup_HTML);
+                }
+
                 resolve();
             }
         );

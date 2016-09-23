@@ -3,7 +3,7 @@
 Inserts an "Ignore Whitespace" button on file diff pages on GitHub.
 
 ### Install
-[From Chrome Store](https://chrome.google.com/webstore/detail/github-ignore-whitespace/cndheldchmdkjjggoghiildfbolgpeka)
+[Install from Chrome Store](https://chrome.google.com/webstore/detail/github-ignore-whitespace/cndheldchmdkjjggoghiildfbolgpeka)
 
 ### Screenshot
 ![Screenshot](http://i.imgur.com/jBIcKsF.png)

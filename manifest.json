@@ -1,5 +1,5 @@
 {
-    "name": "GitHub Ignore Whitespace Button",
+    "name": "GitHub Diff Whitespace Ignore Button",
     "version": "0.0.1",
     "manifest_version": 2,
     "description": "Adds an 'Ignore whitespace' button on any GitHub file diff page.",
@@ -16,7 +16,7 @@
         "128": "icon128.png"
     },
     "browser_action": {
-        "default_title": "Inject!"
+        "default_title": "GitHub Diff Whitespace Ignore Button"
     },
     "permissions": [
         "https://*/*",
